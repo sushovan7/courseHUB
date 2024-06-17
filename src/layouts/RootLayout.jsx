@@ -9,18 +9,18 @@ function RootLayout() {
           <NavLink to="/">CourseHub</NavLink>
         </h1>
         <ul>
-          <l1>
+          <li>
             <NavLink to="about">About</NavLink>
-          </l1>
-          <l1>
+          </li>
+          <li>
             <NavLink to="my-courses">My Courses</NavLink>
-          </l1>
-          <l1>
+          </li>
+          <li>
             <NavLink to="login">Login</NavLink>
-          </l1>
-          <l1>
+          </li>
+          <li>
             <NavLink to="register">Register</NavLink>
-          </l1>
+          </li>
         </ul>
       </nav>
       <Outlet />

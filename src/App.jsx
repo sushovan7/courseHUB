@@ -7,12 +7,13 @@ import {
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import { Home, About, Login, Register, MyCourses } from "../src/pages";
+import { loginAction } from "./pages/Login";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<Login />} action={loginAction} />
       <Route path="/register" element={<Register />} />
       <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/about" element={<About />} />

@@ -1,8 +1,11 @@
 import React from "react";
 import { Form } from "react-router-dom";
 
-function loginAction() {
-  console.log("login action called");
+export async function loginAction(props) {
+  const { request } = props;
+  const formData = await request.formData();
+  console.log(formData.get("email"));
+  console.log(formData.get("password"));
   return null;
 }
 
